@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>词义诊断 · 诊断报告</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #ececec;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px 0 40px;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      color: #333333;
+    }
+
+    .phone {
+      width: 393px;
+      height: 852px;
+      background: #ffffff;
+      padding: 29px 24px 0;
+      flex-shrink: 0;
+    }
+
+    .title {
+      margin: 0 0 20px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 400;
+      color: #333333;
+      background: none;
+      border: 0;
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .panel {
+      background: #f5f6f8;
+      border-radius: 12px;
+      padding: 16px 16px 18px;
+    }
+
+    .panel-title {
+      margin: 0 0 16px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      color: #333333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 12px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #333333;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #d6e8fb;
+      flex-shrink: 0;
+    }
+
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      margin: 0;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background: #f5f6f8;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #333333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="phone">
+    <h1 class="title">本轮学习报告</h1>
+
+    <div class="stack">
+      <section class="panel">
+        <h2 class="panel-title">用时构成</h2>
+        <div class="grid">
+          <p class="item"><span class="dot" aria-hidden="true"></span>作答 40%</p>
+          <p class="item"><span class="dot" aria-hidden="true"></span>诊断 15%</p>
+          <p class="item"><span class="dot" aria-hidden="true"></span>提示 20%</p>
+          <p class="item"><span class="dot" aria-hidden="true"></span>验证 25%</p>
+        </div>
+      </section>
+
+      <p class="bar">提示级别 L1×2 L2×3 L3×1</p>
+      <p class="bar">减题量趋势 · 暂无数据</p>
+      <p class="bar">复核完成率 2/3（67%）</p>
+      <p class="bar">⚠ 缺测：clever 单列（不计入已掌握）</p>
+    </div>
+  </main>
+</body>
+</html>

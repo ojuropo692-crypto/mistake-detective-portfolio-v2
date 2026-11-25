@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>词义诊断 · 练习页</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #ececec;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px 0 40px;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      color: #333333;
+    }
+
+    .phone {
+      width: 393px;
+      height: 852px;
+      background: #ffffff;
+      padding: 29px 24px 0;
+      flex-shrink: 0;
+    }
+
+    .stem {
+      background: #f5f6f8;
+      border-radius: 12px;
+      padding: 18px 24px 20px;
+      margin-bottom: 86px;
+    }
+
+    .word {
+      margin: 0 0 8px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 400;
+      color: #2b6cb0;
+    }
+
+    .sentence {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 400;
+      color: #333333;
+    }
+
+    .ipa {
+      margin: 0;
+      font-size: 13px;
+      line-height: 20px;
+      color: #888888;
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 46px;
+    }
+
+    .cause,
+    .bar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 52px;
+      margin: 0;
+      padding: 0 24px;
+      border: 0;
+      border-radius: 12px;
+      background: #d6e8fb;
+      color: #2b6cb0;
+      font: inherit;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+    }
+
+    .cause {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    .hint {
+      background: #f7dfa5;
+      color: #333333;
+    }
+
+    .reduce {
+      cursor: pointer;
+      transition: background-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .reduce:hover {
+      background: #c5ddf6;
+      box-shadow: inset 0 0 0 2px #2b6cb0;
+    }
+  </style>
+</head>
+<body>
+  <main class="phone">
+    <section class="stem">
+      <p class="word">clever</p>
+      <p class="sentence">She is a ___ girl.</p>
+      <p class="ipa">/ˈklevər/</p>
+    </section>
+
+    <div class="stack">
+      <button type="button" class="cause" tabindex="-1">想不起来意思</button>
+      <button type="button" class="cause" tabindex="-1">和某个单词搞混了</button>
+      <button type="button" class="cause" tabindex="-1">读不懂句子的意思</button>
+      <div class="bar">核对题：选出 clever 的意思</div>
+      <div class="bar hint">展开提示（0/3）</div>
+      <div class="bar reduce">本轮减练 2 道题</div>
+    </div>
+  </main>
+</body>
+</html>
