@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>错词辨析 · AI 产品助理作品集</title>
+  <style>
+    :root {
+      --blue: #D6E8FB;
+      --blue-dark: #2B6CB0;
+      --gray: #F5F6F8;
+      --text: #333333;
+      --muted: #888888;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--gray);
+      color: var(--text);
+      font-family: -apple-system, "Microsoft YaHei", sans-serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    header { text-align: center; margin-bottom: 48px; }
+    h1 { font-size: 32px; margin: 0 0 8px; color: var(--blue-dark); }
+    .sub { font-size: 14px; color: var(--muted); margin: 0 0 20px; }
+    .lead { font-size: 16px; max-width: 640px; margin: 0 auto; }
+    .pages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .card {
+      display: block;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--text);
+      border: 0.5px solid #E5E5E5;
+    }
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+    .card-body { padding: 16px; }
+    .card h2 { font-size: 18px; margin: 0 0 6px; color: var(--blue-dark); }
+    .card p { font-size: 13px; color: var(--muted); margin: 0; }
+    footer { text-align: center; font-size: 13px; color: var(--muted); }
+    footer a { color: var(--blue-dark); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>错词辨析</h1>
+      <p class="sub">诊断型词汇学习原型 · AI 产品助理实习作品集</p>
+      <p class="lead">小学英语背单词只告诉你"错了"，不告诉你"为什么错"。这是我从竞品洞察到可点击原型的完整闭环。</p>
+    </header>
+
+    <section class="pages">
+      <a href="practice.html" class="card">
+        <img src="screenshots/practice.png" alt="练习页截图">
+        <div class="card-body">
+          <h2>练习页</h2>
+          <p>按因练习 · 减练条跳错题本</p>
+        </div>
+      </a>
+      <a href="mistake-book.html" class="card">
+        <img src="screenshots/mistake-book.png" alt="错题本截图">
+        <div class="card-body">
+          <h2>错题本</h2>
+          <p>三态列表 · clever 回练习页、quiet 进诊断报告</p>
+        </div>
+      </a>
+      <a href="diagnosis-report.html" class="card">
+        <img src="screenshots/diagnosis-report.png" alt="诊断报告截图">
+        <div class="card-body">
+          <h2>诊断报告</h2>
+          <p>用时构成 · 提示级别 · 复核完成率</p>
+        </div>
+      </a>
+    </section>
+
+    <footer>
+      <p><a href="https://github.com/ojuropo692-crypto/mistake-detective-portfolio-v2">查看完整项目说明与证据链 →</a></p>
+      <p>静态原型 · 不接 API · 详见 README</p>
+    </footer>
+  </div>
+</body>
+</html>
